@@ -18,15 +18,20 @@
 
 ### Construído com
 
-- Marcação HTML5 semântica
-- Propriedades personalizadas CSS
-- 
+- HTML5 semântica
+- CSS 
 - JavaScript
 
 ### O que eu aprendi
+
+- Manipular Html
 
 ### Desenvolvimento contínuo
 
 ### Recursos úteis
 
+- Google Fonts - https://fonts.google.com/
+
 ## Autor
+
+- Vanderlei Geronimo Junior

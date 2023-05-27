@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Boxicons -->
@@ -44,16 +45,27 @@
     <div class="player" id="player">
         <div class="progress-bar" >
             <span class="bar"><sapn class="fill"></sapn></span>
-            <input type="range" min="0" max="100" value="10" class="progress_music" id="progress">
+            <input type="range" min="0" max="100" value="10" class="progress_music" id="progress" >
+        </div>
+        <audio  id="song">
+            <source src="audio/Henrique e Juiano e Marília Mendonça - FLOR E O BEIJA-FLOR.mp4">
+        </audio>
+
+        <div class="player_img">
+            <img src="img/user.png" alt="">
+            <h5>Lorem, ipsum dolor. <br>
+                <div class="subtitle">Lorem, ipsum.</div>
+            </h5>
         </div>
 
-        <audio controls src="audio/Henrique e Juiano e Marília Mendonça - FLOR E O BEIJA-FLOR.mp4" id="song"></audio>
-        
-        
+            <div class="timeCounter">
+                <span id="timeCounterStart">0:00</span>
+                <span id="timeCounterEnd">0:00</span>
+            </div>
+
             <div class="player__controls">
                 <div><i class='bx bx-skip-previous'></i></div>                
-                <div onclick="playPause()"><i class='bx bx-play' id="ctrl_play"></i></div>
-                <div><i class='bx bx-pause'></i></div>
+                <div onclick="playPause()"><i class='bx bx-play' id="ctrl_play"></i></div>                
                 <div><i class='bx bx-skip-next'></i></div>
             </div>
             <div class="volume">

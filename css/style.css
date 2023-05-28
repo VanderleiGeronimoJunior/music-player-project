@@ -123,10 +123,12 @@ header.shadow
 	transition: 0.3s;
 }
 
-.cover-music{
-    width: 600px;
-    height: 600px;
+.cover-music img{
+    width: 400px;
+    height: 400px;
     position: relative;
+    margin-left: 40px;
+    top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,7 +243,7 @@ display: block;
 
 .player h5 .subtitle{
     font-size: 11px;
-    color: #4c5262;
+    color: #ccc;
 }
 
 
@@ -269,13 +271,16 @@ display: block;
     display: flex;
     justify-content: center;
     align-items: center;    
-    font-size: 3rem;
     cursor: pointer;
     margin: auto; 
 }
-.player .player__controls div:nth-child(2){
-    transform: scale(1.5);
+.player .player__controls i{
+    cursor: pointer;
+    font-size: 3rem;
 }
+/* .player .player__controls i:nth-child(2){
+    transform: scale(1.5);
+} */
 
 .volume{
     width: 5rem;
@@ -294,19 +299,32 @@ display: block;
 
 }
 .volume i {
+    position: fixed;
     right: 10px;
     font-size: 2rem;
     color: #fff;
     margin-top: .5rem 3rem;
     padding: 0 5rem 0 2rem;
 }
+
+.volume:hover input{
+    display: block;
+    right: 100px;
+    position: absolute;
+}
+
+.volume input{
+    display: none;   
+}
+
 .volume input[type="range"]{
     -webkit-appearance: none;
     width: 5rem;
     height: 2px;
     background-color: #fff;
     cursor: pointer;
-    margin: .5rem;    
+    margin: .5rem;
+
 }
 
 .volume input[type="range"]::-webkit-slider-thumb{
